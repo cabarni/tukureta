@@ -39,27 +39,30 @@ body {
 }
 
 h3 {
-    color: #fff;
+    color: black;
+    font-family: bold;
 }
 
 .fixhead {
-    width: 60%;
+    width: 62%;
     display: flex;
     height: 32px;
 }
 
-.top {
-    border-radius: 12px;
-    width: 60px;
-    border: none;
-}
 
 .sounyu {
     border-radius: 12px;
-    width: 100%;
+    width: 90%;
     border: none;
 }
 
+.top {
+    border-radius: 12px;
+    width: 70px;
+    border: none;
+    white-space: nowrap;
+    background-color: rgb(239, 239, 239);
+}
 /*header終わり*/
 
 h5 {
