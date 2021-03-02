@@ -36,7 +36,16 @@
     <!--イラスト部分-->
     <form method="POST" class="ilust">{% csrf_token %}
         <h5><span>&lt;</span>今回使う食材を選択<span>&gt;</span></h5>
-        <div class="vesi">
+        <div class="subtitle-1">
+            <h4>肉</h4>
+            <div class="kind">
+                <label class="box"><input type="checkbox" class="check" name="aim" value="豚肉"><h6>✓</h6><img src="{% static 'img/buta.png' %}"><p class="butaniku">豚肉</p></label>
+                <label class="box"><input type="checkbox" class="check" name="aim" value="鶏肉"><h6>✓</h6><img src="{% static 'img/tori.png' %}"><p>鶏肉</p></label>
+                <label class="box"><input type="checkbox" class="check" name="aim" value="牛肉"><h6>✓</h6><img src="{% static 'img/gyu.png' %}"><p>牛肉</p></label>
+                <label class="box error"><input type="checkbox" class="check" name="aim" value="" checked></label>
+            </div>
+        </div>
+        <div class="subtitle-2">
             <h4>野菜</h4>
             <div class="kind">
                 <label class="box"><input type="checkbox" class="check" name="aim" value="かぼちゃ"><h6>✓</h6><img src="{% static 'img/kabo.png' %}"><p>かぼちゃ</p></label>
@@ -57,28 +66,28 @@
                 <label class="box"><input type="checkbox" class="check" name="aim" value="ブロッコリー"><h6>✓</h6><img src="{% static 'img/buro.png' %}"><p>ブロッコリー</p></label>
             </div>
         </div>
-        <div class="meat">
-            <h4>肉</h4>
+        <div class="subtitle-3">
+            <h4>魚</h4>
             <div class="kind">
-                <label class="box"><input type="checkbox" class="check" name="aim" value="豚肉"><h6>✓</h6><img src="{% static 'img/buta.png' %}"><p>豚肉</p></label>
-                <label class="box"><input type="checkbox" class="check" name="aim" value="鶏肉"><h6>✓</h6><img src="{% static 'img/tori.png' %}"><p>鶏肉</p></label>
-                <label class="box"><input type="checkbox" class="check" name="aim" value="牛肉"><h6>✓</h6><img src="{% static 'img/gyu.png' %}"><p>牛肉</p></label>
-                <label class="box error"><input type="checkbox" class="check" name="aim" value="" checked></label>
+                <label class="box"><input type="checkbox" class="check" name="aim" value="鮭"><h6>✓</h6><img src="{% static 'img/sake-sakana.png' %}"><p>鮭</p></label>
+                <label class="box"><input type="checkbox" class="check" name="aim" value="ブリ"><h6>✓</h6><img class="burimg" src="{% static 'img/buri.png' %}"><p class="buri">ブリ</p></label>
+                <label class="box"><input type="checkbox" class="check" name="aim" value="イカ"><h6>✓</h6><img src="{% static 'img/ika.png' %}"><p>イカ</p></label>
+                <label class="box"><input type="checkbox" class="check" name="aim" value="鯛"><h6>✓</h6><img src="{% static 'img/tai.png' %}"><p>鯛</p></label>
+                <label class="box"><input type="checkbox" class="check" name="aim" value="タコ"><h6>✓</h6><img src="{% static 'img/tako.png' %}"><p>タコ</p></label>
             </div>
-        </div>
-        <div class="choumiryou">
-            <h4>調味料</h4>
-            <div class="kind">
-                <label class="box"><input type="checkbox" class="check" name="aim" value="塩"><h6>✓</h6><img src="{% static 'img/sio.png' %}"><p>塩</p></label>
-                <label class="box"><input type="checkbox" class="check" name="aim" value="砂糖"><h6>✓</h6><img src="{% static 'img/sato.png' %}"><p>砂糖</p></label>
-                <label class="box"><input type="checkbox" class="check" name="aim" value="こしょう"><h6>✓</h6><img src="{% static 'img/kosho.png' %}"><p>こしょう</p></label>
-                <label class="box"><input type="checkbox" class="check" name="aim" value="料理酒"><h6>✓</h6><img src="{% static 'img/sake.png' %}"><p>料理酒</p></label>
-                <label class="box"><input type="checkbox" class="check" name="aim" value="サラダ油"><h6>✓</h6><img src="{% static 'img/sara.png' %}"><p>サラダ油</p></label>
-                <label class="box"><input type="checkbox" class="check" name="aim" value="しょうゆ"><h6>✓</h6><img src="{% static 'img/shou.png' %}"><p>しょうゆ</p></label>
-                <label class="box"><input type="checkbox" class="check" name="aim" value="マヨネーズ"><h6>✓</h6><img src="{% static 'img/mayo.png' %}"><p>マヨネーズ</p></label>
-                <label class="box"><input type="checkbox" class="check" name="aim" value="ケチャップ"><h6>✓</h6><img src="{% static 'img/kecha.png' %}"><p>ケチャップ</p></label>
-                <label class="box"><input type="checkbox" class="check" name="aim" value="みりん"><h6>✓</h6><img src="{% static 'img/miri.png' %}"><p>みりん</p></label>
-                <!--<label class="box error"><input type="checkbox" id="sum" class="check" name="aim" checked><p>a</p></label>-->
+            <div class="subtitle-4">
+                <h4>調味料</h4>
+                <div class="kind">
+                    <label class="box"><input type="checkbox" class="check" name="aim" value="塩"><h6>✓</h6><img src="{% static 'img/sio.png' %}"><p>塩</p></label>
+                    <label class="box"><input type="checkbox" class="check" name="aim" value="砂糖"><h6>✓</h6><img src="{% static 'img/sato.png' %}"><p>砂糖</p></label>
+                    <label class="box"><input type="checkbox" class="check" name="aim" value="こしょう"><h6>✓</h6><img src="{% static 'img/kosho.png' %}"><p>こしょう</p></label>
+                    <label class="box"><input type="checkbox" class="check" name="aim" value="料理酒"><h6>✓</h6><img src="{% static 'img/sake.png' %}"><p>料理酒</p></label>
+                    <label class="box"><input type="checkbox" class="check" name="aim" value="サラダ油"><h6>✓</h6><img src="{% static 'img/sara.png' %}"><p>サラダ油</p></label>
+                    <label class="box"><input type="checkbox" class="check" name="aim" value="しょうゆ"><h6>✓</h6><img src="{% static 'img/shou.png' %}"><p>しょうゆ</p></label>
+                    <label class="box"><input type="checkbox" class="check" name="aim" value="マヨネーズ"><h6>✓</h6><img src="{% static 'img/mayo.png' %}"><p>マヨネーズ</p></label>
+                    <label class="box"><input type="checkbox" class="check" name="aim" value="ケチャップ"><h6>✓</h6><img src="{% static 'img/kecha.png' %}"><p>ケチャップ</p></label>
+                    <label class="box"><input type="checkbox" class="check" name="aim" value="みりん"><h6>✓</h6><img src="{% static 'img/miri.png' %}"><p class="mirin">みりん</p></label>
+                </div>
             </div>
         </div>
 
