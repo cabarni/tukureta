@@ -43,7 +43,7 @@ def mainfunc(request):
         data_list = EatModel.objects.filter(Q(readtext__icontains=query) | Q(title__icontains=query))
         return render(request, 'view.html', {'data_list':data_list})
     object_list = EatModel.objects.all()
-    return render(request, 'main.html', {'object_list':object_list})
+    return render(request, 'index.html', {'object_list':object_list})
 
 def logoutfunc(request):
     logout(request)
@@ -81,6 +81,6 @@ def viewfunc(request):
     if request.method == "POST":
         query = request.POST.get('aim')
         data_list = EatModel.objects.filter(readtext__icontains=query)
-        return render(request, 'main.html', {'data_list':data_list})
+        return render(request, 'index.html', {'data_list':data_list})
     object_list = EatModel.objects.all()
     return render(request, 'view.html', {'object_list':object_list})
