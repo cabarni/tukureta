@@ -10,7 +10,7 @@ h3 {
 
 label {
     width: 85%;
-    height: 180px;
+    height: 200px;
     border: solid 2px rgb(201, 200, 200);
     margin-top: 20px;
     border-radius: 7px;
@@ -34,50 +34,71 @@ a {
 }
 
 .left {
-    width: 50%;
+    width: 35%;
 }
 
 .img {
-    text-align: left;
-    width: 100%;
+    text-align: center;
+    width: 80%;
+    margin: 10px auto 0;
 }
 
 img {
     width: 100%;
     height: 120px;
+    margin: 0 auto;
 }
 
 .title {
     text-align: center;
-    color: #FFbb00;
+    color: black;
     width: 100%;
+    margin-top: 22px;
 }
 
 .right {
-    width: 50%;
-    height: 170px;
+    width: 65%;
+    height: 175px;
+    text-align: center;
+    
 }
 
-
 .content {
-    margin-top: 10px;
-    margin-left: 5px;
-    width: 50px;
+    display: inline-block;
     font-weight: bold;
     font-family: serif;
     color: black;
+    height: auto;
+    padding: 0;
+    margin-bottom: 0;
 }
 
-
-.material {
+.material, .subtitle {
     width: 100%;
-    height: 70px;
+    height: 80%;
     white-space: pre-wrap;
-    color: rgb(0, 162, 255);
+    color: black;
+    line-height: 17px;
+    font-size: 12px;
 }
 
-.author {
-    color: rgb(95, 93, 93);
-    font-size: 14px;
-    font-weight: bold;
+.separate {
+    display: flex;
+    height: 86%;
+    color: black;
+}
+
+.top {
+    margin: 0;
+}
+
+.sa {
+    width: 50%;
+    height: 100%;
+    border-right: 1px dashed black;
+}
+
+.yu {
+    width: 48%;
+    height: 100%;
 }

@@ -22,12 +22,20 @@
                     <p class="title" style="white-space:pre-wrap;">{{ query.title }}</p>
                 </div>
                 <div class="right">
-                    <p class="content" style="white-space:pre-wrap;">材料：</p>
-                    <p class="material" style="white-space:pre-wrap;">{{ query.material }}</p>   
-                    <p class="author" style="white-space:pre-wrap;">投稿者：{{ query.author }}</p>
+                    <p class="content" style="white-space:pre-wrap;">材料</p>
+                    <div class="separate">
+                        <div class="sa">
+                            <p class="top">〈食材〉</p>
+                            <p class="material" style="white-space:pre-wrap;">{{ query.material }}</p>
+                        </div>
+                        <div class="yu">
+                            <p class="top">〈調味料〉</p>
+                            <p class="subtitle" style="white-space:pre-wrap;">{{ query.subtitle }}</p>
+                        </div>
+                    </div>
+                    <!--<p class="author" style="white-space:pre-wrap;">投稿者：{{ query.author }}</p>-->
                 </div>
             </div>
-                
         </a>
     </label>
     {% endfor %}

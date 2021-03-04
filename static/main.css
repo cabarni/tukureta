@@ -2,8 +2,12 @@ body {
     padding: 0;
     margin: 0;
     width: 100%;
+    background-color: rgb(241, 241, 241);
 }
 
+p {
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;;
+}
 
 .alert {
     position: fixed;
@@ -111,22 +115,6 @@ main {
     margin-top: 40px;
 }
 
-.mirin {
-    margin-top: 26px;
-}
-
-.buri {
-    margin-top: 17px;
-}
-
-.burimg {
-    margin-top: 20px;
-}
-
-.butaniku {
-    margin-top: 10px;
-}
-
 .box {
     position: relative;
 }
@@ -162,9 +150,15 @@ input[type="checkbox"]:checked + h6{
     pointer-events: none;
 }
 
+img {
+    border-radius: 10px 10px 0 0;
+}
+
 .kind {
     display: flex;
     overflow: scroll;
+    height: 160px;
+    padding: 20px;
 }
 
 .kind::-webkit-scrollbar {
@@ -174,11 +168,12 @@ input[type="checkbox"]:checked + h6{
 
 label {
     display: inline-block;
-    border: solid 2px rgb(201, 200, 200);
-    box-shadow: 1px 1px 3px 2px rgb(201, 200, 200);
-    height: 130px;
+    height: 110px;
     margin: 12px 0 0 20px; 
     border-radius: 10px;
+    background: #f5f5f5;
+    box-shadow:  5px 5px 13px #c6c6c6,
+                 -5px -5px 13px #ffffff;
 }
 
 p {
@@ -189,7 +184,81 @@ img {
     width: 100px;
 }
 
+.kabo {
+    margin-top: 16px;
+}
 
+.moya {
+    margin-top: 12px;
+}
+
+.nasu {
+    margin-top: 13px;
+}
+
+.dai {
+    margin-top: 23px;
+}
+
+.kyuri {
+    margin-top: 13px;
+}
+
+.kyabe {
+    margin-top: 14px;
+}
+
+.tama {
+    margin-top: 14px;
+}
+
+.nin {
+    margin-top: 14px;
+}
+
+.pi- {
+    margin-top: 10px;
+}
+
+.negi {
+    margin-top: 15px;
+}
+
+.haku {
+    margin-top: 15px;
+}
+
+.jaga {
+    margin-top: 15px;
+}
+
+.reta {
+    margin-top: 8px;
+}
+
+.toma {
+    margin-top: 15px;
+}
+
+.buro {
+    margin-top: 15px;
+}
+
+.sake-sakana {
+    margin-top: 18px;
+}
+
+.buri {
+    margin-top: 8px;
+}
+
+.ika {
+    margin-top: 3px;
+}
+
+.tai {
+    margin-top: 6px;
+}
 
 .kensaku {
     background-color: #FFbb00;
@@ -204,7 +273,7 @@ img {
 
 .fas {
     font-size: 20px;
-    color:#fff;
+    color: rgb(241, 241, 241);
     pointer-events: none;
     cursor: default;
 }

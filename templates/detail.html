@@ -15,10 +15,23 @@
 {% block content %}
 <p class="title">{{ object.title }}</p>
 <div class="flex">
-    <p class="img"><img src="{{ object.snsimage.url }}"></p>
+    <div class="joge">
+        <p class="img"><img src="{{ object.snsimage.url }}"></p>
+        <p class="zairyo">材料</p>
+        <div class="separate">
+            <div class="left">
+                <p class="pl">食材</p>
+                <p class="shokuzai" style="white-space:pre-wrap;">{{ object.material }}</p>
+            </div>
+            <div class="right">
+                <p class="pr">調味料</p>
+                <p class="choumiryo" style="white-space:pre-wrap;">{{ object.subtitle }}</p>
+            </div>
+        </div>
+    </div>
     <div class="space">
         <h3>作り方</h3>
-        <p class="material" style="white-space:pre-wrap;">{{ object.content }}</p>
+        <p class="content" style="white-space:pre-wrap;">{{ object.content }}</p>
     </div>
 </div>
 

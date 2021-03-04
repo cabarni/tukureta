@@ -8,6 +8,8 @@ from django.contrib.auth.decorators import login_required
 from django.views.generic import CreateView
 from django.urls import reverse_lazy
 from django.db.models import Q
+from PIL import Image
+
 
 # Create your views here.
 
@@ -69,9 +71,10 @@ def readfunc(request, pk):
         return redirect('')
 
 class EatCreate(CreateView):
+    
     template_name = 'create.html'
     model = EatModel
-    fields = ('title', 'content', 'author', 'snsimage', 'readtext', 'material')
+    fields = ('title', 'content', 'author', 'snsimage', 'readtext', 'material', 'subtitle')
     success_url = reverse_lazy('create')
 
 def viewfunc(request):
