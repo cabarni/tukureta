@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 from pathlib import Path
-from PIL import Image
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -129,7 +128,7 @@ STATICFILES_DIRS = [str(BASE_DIR / 'static')]
 
 MEDIA_URL =  'mediamedia/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+MEDIA_ROOT = BASE_DIR, 'media'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 LOGIN_URL = 'login'
